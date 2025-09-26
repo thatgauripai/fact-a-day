@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 from datetime import date
 
@@ -9,7 +11,7 @@ if not os.path.exists(folder):
     os.makedirs(folder)
 
 if not os.path.exists(filename):
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(f"# Science Fact of the Day - {today}\n\n")
         f.write("✨ **Fact:** \n\n")
         f.write("🧠 **Why it's cool:** \n\n")
